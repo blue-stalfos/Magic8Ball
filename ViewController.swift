@@ -28,5 +28,9 @@ class ViewController: UIViewController {
 		ImageView.image = UIImage(named: ballArray[randomBallNumber])
 	}
 	
+	override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+		randomizeBallImage()
+	}
+	
 }
 
